@@ -64,12 +64,13 @@ protected:
     UPROPERTY(EditAnywhere, Category = "Combat")
     TObjectPtr<USkeletalMeshComponent> Weapon;
 ```
-**NOTE**: TObjectPtr behaves the same as a raw pointer but with some additional features:
+!!! note "A note about `TObjectPtr` and `UPROPERTY`"
+    `TObjectPtr` behaves the same as a raw pointer but with some additional features:
 
-* Access tracking: We can track how often a pointer is accessed or dereferenced
-* Optional lazy load: An asset can not be loaded until its used
+    * Access tracking: We can track how often a pointer is accessed or dereferenced
+    * Optional lazy load: An asset can not be loaded until its used
 
-`UPROPERTY` exposes the component to the Unreal Editor under the `Combat` category and `EditAnywhere` means it can be edited from anywhere within the Editor.
+    `UPROPERTY` exposes the component to the Unreal Editor under the `Combat` category and `EditAnywhere` means it can be edited from anywhere within the Editor.
 
 ### Create the skeletal mesh in the .cpp file
 
