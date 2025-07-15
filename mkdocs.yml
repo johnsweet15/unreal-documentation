@@ -16,16 +16,16 @@ theme:
   palette:
     - scheme: default
       toggle: 
-        icon: material/lightbulb
+        icon: material/toggle-switch
         name: Switch to dark mode
-      primary: teal
-      accent: purple
+      primary: indigo
+      accent: indigo
     - scheme: slate
       toggle: 
-        icon: material/lightbulb
+        icon: material/toggle-switch
         name: Switch to light mode
-      primary: teal
-      accent: lime
+      primary: black
+      accent: indigo
   font:
     text: Roboto
     code: Roboto Mono
@@ -43,3 +43,9 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.mark
   - attr_list
+
+nav:
+  - Home: index.md
+  - Gameplay Ability System:
+    - Project Setup (Aura): gas/project-setup.md
+    - Base Character Class: gas/base-character-class.md
