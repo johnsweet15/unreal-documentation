@@ -3,8 +3,8 @@ theme:
   name: material
   features:
     - navigation.tabs
-    - navigation.sections
     - navigation.top
+    - navigation.expand
     - toc.integrate
     - navigation.tabs.link
     - search.highlight
@@ -49,5 +49,6 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Gameplay Ability System:
-    - Project Setup (Aura): gas/project-setup.md
-    - Base Character Class: gas/base-character-class.md
+    - Project Creation:
+      - Project Setup (Aura): gas/project-creation/project-setup.md
+      - Base Character Class: gas/project-creation/base-character-class.md
