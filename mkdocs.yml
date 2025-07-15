@@ -43,6 +43,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.mark
   - attr_list
+  - pymdownx.tabbed:
+      alternate_style: true 
 
 nav:
   - Home: index.md
